@@ -11,7 +11,7 @@ body {
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
-    font-family: Avant Garde, Helvetica;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.5vw; 
     font-size: 1.5vw; 
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
@@ -26,7 +26,7 @@ body.fade-out {
 
 /* Heading 1 elements */
 h1 {
-    font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+    font-family: 'Press Start 2P', cursive; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
@@ -47,7 +47,8 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
     text-align: justify; /* Justify text within paragraph elements */
     font-size: 1vw; /* Relative font sizing equal to 2.5% of the viewport width */
 }
@@ -124,7 +125,8 @@ footer {
     color: white; /* This is the font color for text on our navbar */
     padding: .75vw 1vw; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
+    font-family: 'Quicksand', sans-serif; /* This specifies the font family for text on our navbar */
+    font-weight: 300,bold;
     font-size: 1.5vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
@@ -191,7 +193,7 @@ footer {
 
 /***** Slideshow Styling *****/
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's palced over the video in the background */    
+    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's placed over the video in the background */    
 }
 
 .mySlides{
@@ -200,7 +202,7 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 39.5vw; /* Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
+    width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
@@ -216,7 +218,7 @@ footer {
 .Slideshow_Images {
     vertical-align: middle; /* This centers the images vertically within the slideshow container */
     height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
+    box-shadow: 0px 5px 10px 18px rgba(0, 0, 0, 0.801); /* Adds a shadow around the slideshow images */
     width: 100%; /* The width of the images is automatically adjusted based on the content */
 }
 
@@ -227,9 +229,9 @@ footer {
     top: 50%; /* This moves the buttons up in the slideshow container */
     width: auto; /* The width of the buttons is automatically adjusted based on the content */
     padding: 2vw; /* Adds padding equal to 2% of the viewport width */
-    color: darkgray; 
+    color: #ff0080; 
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
     user-select: none; /* This property makes it so that the user cannot highlight the text */
     transition: 0.6s ease; /* This specifies the details of the hover transition for these elements */
@@ -243,8 +245,8 @@ footer {
 
 /* Hover effect on slide show buttons */
 .Previous:hover, .Next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Makes the background of the arrows a transparent gray color */
-    color: white; /* Makes the arrows white when hovered over */
+    background-color: rgba(77, 13, 45, 0.801); /* Makes the background of the arrows a transparent gray color */
+    color: hsl(330, 98%, 48%); /* Makes the arrows white when hovered over */
 }
 
 /* Slideshow text */
@@ -255,7 +257,7 @@ footer {
     bottom: 0; /* This property sets the text at the bottom of the image */
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /* The text is center aligned within the image */
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: .1vw; /* This gives slight spacing between the letters */
     font-size: 1.5vw; /* Font size is relative to the size of the viewport width */
     background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
@@ -269,9 +271,9 @@ footer {
     height: 1vw; /* The dots are sized relative to the viewport width */
     width: 1vw;
     margin: .25vw; /* adds additional spacing between the dots */ 
-    background-color: white; /* Makes the dots white */
+    background-color: #ff0080; /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
-    display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
+    display: inline-block; /* Allows the dots to sit next to each other rather than on a new line */
     transition: background-color 0.6s ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below) */
     z-index: 1; /* This ensures the dots will be displayed above any other elements */
 }
@@ -317,6 +319,8 @@ footer {
     height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the left columns */
 }
+
+
 
 .Column_1_2 {
     float: left;
