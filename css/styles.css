@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size:100%;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  row-gap: 2rem;
+  margin: 0;
+  background-color: #05170d;
+}
+
+.main_menu {
+  flex: 1;
+  display: flex;
+  flex-flow: wrap column;
+  max-width: 140px;
+  margin: 20px 20px 2px 20px;
+  padding: 20px 2px;
+  background-color: #111814;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 10px 20px, rgba(0, 0, 0, 0.7) 0px 0px 6px 6px;
+
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+}
+
+.main_menu_top {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  margin: 5px 5px 40px 5px;
+}
+
+.main_menu_logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  
+}
+
+.main_menu_nav {
+  display: flex;
+  margin: 5px 5px 40px 5px;
+  font-size: 1em;
+  flex-flow: wrap column;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.main_menu_nav p {
+  display: flex;
+  justify-content: center;
+  margin:12pt;
+}
+
+.main_menu_social {
+  display: flex;
+  flex-flow: nowrap row;
+  margin: 5px 5px 40px 5px;
+  align-content: space-between;
+}
+
+.main_menu_social img {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.content_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  flex: 5;
+  row-gap: 70px;
+}
+
+header {
+  padding: 10px;
+  margin-top: 50px;
+  justify-content: left;
+  margin-left: 80px;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.header_section {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  color: azure;
+  background-color: #05170d;
+}
+
+.header_section p {
+  text-align: left;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.card {
+  color:azure;
+  background-color: #05170d;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 10px 20px, rgba(0, 0, 0, 0.7) 0px 0px 6px 6px;
+
+}
+
+.card-title {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 2rem;
+  color: #09ef79;
+  justify-content: center;
+}
+
+.card-text {
+  display:flex;
+  height:90%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+
+.about_section {
+  display:flex;
+  justify-content: center;
+}
+
+.about_section > img {
+  height: 90%;
+  width:90%;
+}
+
+.skills_section {
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  width: 100%;
+}
+
+#myCanvas{
+  font-weight: 900;
+  font-size: 2rem;
+}
+.content {
+  max-width: 99%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  align-items: center;
+}
+
+.content article {
+  flex: 4;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.card-img-top {
+  height: 225px; 
+  width: 100%; 
+  display: block;
+}
+
+.btn {
+  background-color: #ff0080;
+  color: azure;
+  border-color: #ff0080;
+  outline: none;
+
+}
+
+/*-------------3D Carousel-------------*/
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* hardware accelerator class */
+.trans3d {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform-style: preserve-3d;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform-style: preserve-3d;
+  -ms-transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+  /*-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility:hidden;
+	backface-visibility:hidden;*/
+}
+
+.trans3d > img {
+  width:100px;
+  height:100px;
+}
+
+#contentContainer {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#carouselContainer {
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 1px;
+  left: 1%;
+  top: 1%;
+  width: 100%;
+  height: 100%;
+}
+
+.carouselItem {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -120px;
+  margin-top: -90px;
+  visibility: hidden;
+}
+
+.carouselItemInner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  margin-left: -120px;
+  margin-top: -90px;
+  text-align: center;
+  padding-top: 5px;
+}
+/*-------------End 3D Carousel-------------*/
+
+/*-------------Contact Form-------------*/
+.contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+/*-------------Contact Form-------------*/
+
+/*-------------Attribution-------------*/
+.attribution {
+  color: azure;
+}
+.attribution a{
+  color:#ff0080;
+}
+/*-------------Attribution-------------*/
